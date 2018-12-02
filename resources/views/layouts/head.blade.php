@@ -23,11 +23,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,700" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="{{asset('/resources/css/animate.css')}}">
+	<link rel="stylesheet" href="{{asset('/public/css/animate.css')}}">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="{{asset('/resources/css/bootstrap.css')}}">
+	<link rel="stylesheet" href="{{asset('/public/css/bootstrap.css')}}">
 
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
