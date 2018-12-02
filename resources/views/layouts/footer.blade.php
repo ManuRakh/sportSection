@@ -98,18 +98,18 @@
         <!-- Stellar Parallax -->
         <script src="{{asset('/public/js/jquery.stellar.min.js')}}"></script>
         <!-- Flexslider -->
-        <script src="{{asset('js/jquery.flexslider-min.js')}}"></script>
+        <script src="{{asset('/public/js/jquery.flexslider-min.js')}}"></script>
         <!-- Owl carousel -->
-        <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('/public/js/owl.carousel.min.js')}}"></script>
         <!-- Magnific Popup -->
-        <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
-        <script src="{{asset('js/magnific-popup-options.js')}}"></script>
+        <script src="{{asset('/public/js/jquery.magnific-popup.min.js')}}"></script>
+        <script src="{{asset('/public/js/magnific-popup-options.js')}}"></script>
         <!-- Counters -->
-        <script src="{{asset('js/jquery.countTo.js')}}"></script>
+        <script src="{{asset('/public/js/jquery.countTo.js')}}"></script>
         <!-- Date Picker -->
-        <script src="{{asset('js/bootstrap-datepicker.js')}}"></script>
+        <script src="{{asset('/public/js/bootstrap-datepicker.js')}}"></script>
         <!-- Main -->
-        <script src="{{asset('js/main.js')}}"></script>
+        <script src="{{asset('/public/js/main.js')}}"></script>
     
         </body>
     </html>
