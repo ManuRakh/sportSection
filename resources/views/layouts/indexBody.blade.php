@@ -1,4 +1,8 @@
-
+@if(count($errors)>0)
+@foreach($errors->all() as $error)
+{{$error}}
+@endforeach
+@endif
 	<body>
         <div class="colorlib-loader"></div>
     
@@ -282,44 +286,25 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-                            <h2>What we offer</h2>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+                            <h2>Что у нас есть</h2>
+                            <p></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
+                        @foreach( $clientcount as $fclients)
                             <div class="col-md-3 col-sm-6 text-center animate-box">
                                 <div class="counter-entry">
                                     <div class="desc">
-                                        <span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
-                                        <span class="colorlib-counter-label">Clients</span>
+                                    
+            
+                                        <span class="colorlib-counter js-counter" data-from="0" data-to="{{$fclients->count}}" data-speed="5000" data-refresh-interval="50"></span>
+                                        <span class="colorlib-counter-label">{{$fclients->name}}</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 text-center animate-box">
-                                <div class="counter-entry">
-                                    <div class="desc">
-                                        <span class="colorlib-counter js-counter" data-from="0" data-to="400" data-speed="5000" data-refresh-interval="50"></span>
-                                        <span class="colorlib-counter-label">Trainers</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 text-center animate-box">
-                                <div class="counter-entry">
-                                    <div class="desc">
-                                        <span class="colorlib-counter js-counter" data-from="0" data-to="1200" data-speed="5000" data-refresh-interval="50"></span>
-                                        <span class="colorlib-counter-label">Managers</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 text-center animate-box">
-                                <div class="counter-entry">
-                                    <div class="desc">
-                                        <span class="colorlib-counter js-counter" data-from="0" data-to="1300" data-speed="5000" data-refresh-interval="50"></span>
-                                        <span class="colorlib-counter-label">Rooms</span>
-                                    </div>
-                                </div>
-                            </div>
+        
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -335,61 +320,21 @@
                     </div>
                     <div class="row animate-box">
                         <div class="owl-carousel">
+                        @foreach($Instructorinf as $instructorsboom)
+
                             <div class="item">
                                 <div class="col-md-12 text-center">
                                     <div class="trainers-entry">
                                         <div class="trainer-img" style="background-image: url(public/images/trainer-1.jpg)"></div>
                                         <div class="desc">
-                                            <h3>Diego Carter</h3>
-                                            <span>Power Trainer</span>
+                                            <h3>{{$instructorsboom->name}}</h3>
+                                            <span>{{$instructorsboom->job}}</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="col-md-12 text-center">
-                                    <div class="trainers-entry">
-                                        <div class="trainer-img" style="background-image: url(public/images/trainer-2.jpg)"></div>
-                                        <div class="desc">
-                                            <h3>Lea Young</h3>
-                                            <span>Yoga Trainer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-12 text-center">
-                                    <div class="trainers-entry">
-                                        <div class="trainer-img" style="background-image: url(public/images/trainer-3.jpg)"></div>
-                                        <div class="desc">
-                                            <h3>Alysha Reed</h3>
-                                            <span>Dance Trainer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-12 text-center">
-                                    <div class="trainers-entry">
-                                        <div class="trainer-img" style="background-image: url(public/images/trainer-4.jpg)"></div>
-                                        <div class="desc">
-                                            <h3>George Cooper</h3>
-                                            <span>Boxing Trainer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-12 text-center">
-                                    <div class="trainers-entry">
-                                        <div class="trainer-img" style="background-image: url(public/images/trainer-2.jpg)"></div>
-                                        <div class="desc">
-                                            <h3>Melody Moxin</h3>
-                                            <span>Boxing Trainer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
+                           
     
                         </div>
                     </div>
@@ -476,42 +421,22 @@
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
                         </div>
                     </div>
+                    @foreach($fprogramm as $fprogram)
                     <div class="row">
                         <div class="col-md-4 text-center animate-box">
                             <div class="classes">
                                 <div class="classes-img" style="background-image: url(public/images/classes-1.jpg);">
-                                    <p class="price text-center"><span>$25.00<br><small>/month</small></span></p>
+                                    <p class="price text-center"><span>{{$fprogram->price}}<br><small>/month</small></span></p>
                                 </div>
                                 <div class="desc">
-                                    <h3><a href="#">Fitness Gym &amp; Cardio</a></h3>
-                                    <p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+                                    <h3><a href="#">{{$fprogram->name}}</a></h3>
+                                    <p>{{$fprogram->shortdest}}</p>
                                     <p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 text-center animate-box">
-                            <div class="classes">
-                                <div class="classes-img" style="background-image: url(public/images/classes-2.jpg);">
-                                    <p class="price text-center"><span>$25.00<br><small>/month</small></span></p>
-                                </div>
-                                <div class="desc">
-                                    <h3><a href="#">Strength Training</a></h3>
-                                    <p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
-                                    <p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center animate-box">
-                            <div class="classes">
-                                <div class="classes-img" style="background-image: url(public/images/classes-3.jpg);">
-                                    <p class="price text-center"><span>$25.00<br><small>/month</small></span></p>
-                                </div>
-                                <div class="desc">
-                                    <h3><a href="#">Yoga Program</a></h3>
-                                    <p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
-                                    <p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
-                                </div>
-                            </div>
+                     @endforeach
+                      
                         </div>
                     </div>
                 </div>	
@@ -526,45 +451,57 @@
                                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
                             </div>
                         </div>
+
                         <div class="col-md-8 col-md-pull-4">
-                            <form method="post" class="colorlib-form">
+                            <form method="post" class="colorlib-form" action="{{route('addclient')}}">
                               <div class="row">
                                   <div class="col-md-6 animate-box">
                                         <div class="form-group">
+
+
                                             <label for="services">Services</label>
+
                                             <div class="form-field">
+
                                                 <i class="icon icon-arrow-down3"></i>
-                                                <select name="services" id="services" class="form-control">
-                                                    <option value="#">Yoga</option>
-                                                    <option value="#">Boxing</option>
-                                                    <option value="#">Power</option>
-                                                    <option value="#">Body Building</option>
+
+                                                <select name = "fitnessprogrammid" class="form-control">
+                                                @foreach($fprogramm as $fprogram)
+
+                                                   <option  value="{{$fprogram->id}}">{{$fprogram->name}}</option>
+                                                   
+                                                   @endforeach
                                                 </select>
                                             </div>
+                                         
+
+
                                         </div>
+
                                     </div>
+                                    
                                     <div class="col-md-6 animate-box">
                                         <div class="form-group">
-                                            <label for="name">Fullname</label>
+                                            <label for="name">ФИО</label>
                                             <div class="form-field">
-                                                <input type="text" class="form-control" placeholder="name">
+                                                <input type="text" class="form-control" placeholder="имя" name = "fname">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 animate-box">
                                         <div class="form-group">
-                                            <label for="email">Phone</label>
+                                            <label for="phone">Телефон</label>
                                             <div class="form-field">
-                                                <input type="text" class="form-control" placeholder="phone">
+                                                <input type="text" class="form-control" placeholder="номер" name = "phone">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 animate-box">
                                         <div class="form-group">
-                                            <label for="date">Date:</label>
+                                            <label for="date">Дата:</label>
                                             <div class="form-field">
                                                 <i class="icon icon-calendar2"></i>
-                                                <input type="text" id="date" class="form-control date" placeholder="Date">
+                                                <input type="text" id="date" class="form-control date" placeholder="дата" name = "datetoday">
                                             </div>
                                         </div>
                                     </div>
@@ -576,6 +513,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{ csrf_field() }}
+
                         </form>
                         </div>
                     </div>

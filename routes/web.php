@@ -12,3 +12,4 @@
 */
 
 Route::get('/','IndexController@index')->name('index');
+Route::post('/', 'ClientController@store')->name('addclient');
