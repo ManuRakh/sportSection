@@ -1,6 +1,5 @@
 
 	<body>
-		
         <div class="colorlib-loader"></div>
     
         <div id="page">
@@ -104,61 +103,20 @@
                     <div class="row">
                         <div class="col-md-12 intro-wrap animate-box">
                             <div class="intro-flex">
+                            @foreach($fprogramm as $fprogram)
+
                                 <div class="one-third intro-img">
                                     <div class="desc">
-                                        <h3>Фитнесс программа</h3>
+                                        <h3>{{$fprogram->name}}</h3>
                                         <p class="tag-price">
-                                            <span class="price">$150</span>
+                                            <span class="price">{{$fprogram->price}} рублей</span>
                                             <span class="month">месяц</span>
                                         </p>
-                                        <p>Which roasted parts of sentences fly into your mouth.</p>
-                                        <p class="btn-more"><a href="#">подробнее <i class="icon-arrow-right3"></i></a></p>
+                                        <p>{{$fprogram->shortdesc}}.</p>
+                                        <p class="btn-more"><a href="{{$fprogram->id}}">подробнее <i class="icon-arrow-right3"></i></a></p>
                                     </div>
                                 </div>
-                                <div class="one-third intro-img">
-                                    <div class="desc">
-                                        <h3>Yoga Program</h3>
-                                        <p class="tag-price">
-                                            <span class="price">$150</span>
-                                            <span class="month">месяц</span>
-                                        </p>
-                                        <p>Which roasted parts of sentences fly into your mouth.</p>
-                                        <p class="btn-more"><a href="#">подробнее <i class="icon-arrow-right3"></i></a></p>
-                                    </div>
-                                </div>
-                                <div class="one-third intro-img">
-                                    <div class="desc">
-                                        <h3>Dance Program</h3>
-                                        <p class="tag-price">
-                                            <span class="price">$150</span>
-                                            <span class="month">месяц</span>
-                                        </p>
-                                        <p>Which roasted parts of sentences fly into your mouth.</p>
-                                        <p class="btn-more"><a href="#">подробнее <i class="icon-arrow-right3"></i></a></p>
-                                    </div>
-                                </div>
-                                <div class="one-third intro-img">
-                                    <div class="desc">
-                                        <h3>Aerobics Classes</h3>
-                                        <p class="tag-price">
-                                            <span class="price">$150</span>
-                                            <span class="month">месяц</span>
-                                        </p>
-                                        <p>Which roasted parts of sentences fly into your mouth.</p>
-                                        <p class="btn-more"><a href="#">подробнее <i class="icon-arrow-right3"></i></a></p>
-                                    </div>
-                                </div>
-                                <div class="one-third intro-img">
-                                    <div class="desc">
-                                        <h3>Pilates</h3>
-                                        <p class="tag-price">
-                                            <span class="price">$150</span>
-                                            <span class="month">месяц</span>
-                                        </p>
-                                        <p>Which roasted parts of sentences fly into your mouth.</p>
-                                        <p class="btn-more"><a href="#">подробнее <i class="icon-arrow-right3"></i></a></p>
-                                    </div>
-                                </div>
+                            @endforeach                                 
                             </div>
                      </div>
                     </div>
