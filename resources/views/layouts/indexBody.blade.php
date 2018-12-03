@@ -1,43 +1,5 @@
 
-	<body>
-        <div class="colorlib-loader"></div>
-    
-        <div id="page">
-            <nav class="colorlib-nav" role="navigation">
-                <div class="top-menu">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <div id="colorlib-logo"><a href="index.html">Спортивный Клуб "Лев" </a></div>
-                            </div>
-                            <div class="col-md-10 text-right menu-1">
-                                <ul>
-                                    <li class="active"><a href="/">Домашняя страница</a></li>
-                                    <li ><a href="/">Тхеквондо</a></li>
-
-                                    <li class="has-dropdown">
-                                        <a >Пхумсэ</a>
-                                        <ul class="dropdown">
-                                            <li><a href="classes-single.html">Базовая техника</a></li>
-                                            <li><a href="#">Ударная техника</a></li>
-                                            <li><a href="#">Самооборона</a></li>
-                                            <li><a href="#">Спаринговая техника(Кюрги)</a></li>
-                                            <li><a href="#">Раздел Пумсэ(элементы блоков и ударов)</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="schedule.html">Расписание</a></li>
-                                    <li><a href="about.html">Тренера</a></li>
-                                    <li><a href="event.html">События</a></li>
-                                    <li><a href="blog.html">Новости</a></li>
-                                    <li><a href="shop.html">Магазин</a></li>
-                                    <li><a href="contact.html">О нас</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <aside id="colorlib-hero" class="colorlib-degree-bg">
+                        <aside id="colorlib-hero" class="colorlib-degree-bg">
                 <div class="flexslider">
                     <ul class="slides">
                        <li style="background-image: url(public/images/img_bg_1.jpg);">
@@ -97,7 +59,6 @@
                   </div>
             </aside>
     
-            
             <div id="colorlib-intro" class="goto-here">
                 <div class="container">
                     <div class="row">
