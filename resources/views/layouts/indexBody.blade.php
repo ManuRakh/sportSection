@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @if(count($errors)>0)
 @foreach($errors->all() as $error)
 {{$error}}
@@ -42,6 +43,10 @@
                 </div>
             </nav>
             <aside id="colorlib-hero" class="colorlib-degree-bg">
+=======
+
+                        <aside id="colorlib-hero" class="colorlib-degree-bg">
+>>>>>>> ee2ad3e29b77c9b903a84397f4a2a7c33f9e8dc3
                 <div class="flexslider">
                     <ul class="slides">
                        <li style="background-image: url(public/images/img_bg_1.jpg);">
@@ -101,7 +106,6 @@
                   </div>
             </aside>
     
-            
             <div id="colorlib-intro" class="goto-here">
                 <div class="container">
                     <div class="row">

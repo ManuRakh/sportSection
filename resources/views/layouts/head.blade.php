@@ -56,3 +56,42 @@
 	<![endif]-->
 
 	</head>
+	
+	<body>
+        <div class="colorlib-loader"></div>
+    
+        <div id="page">
+            <nav class="colorlib-nav" role="navigation">
+                <div class="top-menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div id="colorlib-logo"><a href="index.html">Спортивный Клуб "Лев" </a></div>
+                            </div>
+                            <div class="col-md-10 text-right menu-1">
+                                <ul>
+                                    <li class="active"><a href="/">Домашняя страница</a></li>
+                                    <li ><a href="/">Тхеквондо</a></li>
+
+                                    <li class="has-dropdown">
+                                        <a >Пхумсэ</a>
+                                        <ul class="dropdown">
+                                            <li><a href="">Базовая техника</a></li>
+                                            <li><a href="">Ударная техника</a></li>
+                                            <li><a href="">Самооборона</a></li>
+                                            <li><a href="">Спаринговая техника(Кюрги)</a></li>
+                                            <li><a href="">Раздел Пумсэ(элементы блоков и ударов)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="scheduling">Расписание</a></li>
+                                    <li><a href="trainers">Тренера</a></li>
+                                    <li><a href="events">События</a></li>
+                                    <li><a href="blog">Новости</a></li>
+                                    <li><a href="shop">Магазин</a></li>
+                                    <li><a href="contact">О нас</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
