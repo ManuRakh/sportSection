@@ -14,4 +14,5 @@
 Route::get('/','IndexController@index')->name('index');
 Route::post('/', 'ClientController@store')->name('addclient');
 Route::get('/blog','BlogController@index')->name('blog');
-
+Route::get('post/create', 'PostController@create');
+Route::post('post', 'PostController@store');

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @if(count($errors)>0)
 @foreach($errors->all() as $error)
 {{$error}}
@@ -43,10 +42,6 @@
                 </div>
             </nav>
             <aside id="colorlib-hero" class="colorlib-degree-bg">
-=======
-
-                        <aside id="colorlib-hero" class="colorlib-degree-bg">
->>>>>>> ee2ad3e29b77c9b903a84397f4a2a7c33f9e8dc3
                 <div class="flexslider">
                     <ul class="slides">
                        <li style="background-image: url(public/images/img_bg_1.jpg);">
@@ -132,79 +127,7 @@
             </div>
             
     
-            <div id="colorlib-services" class="colorlib-degree-bg-full">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-                            <h2>Work hard stay humble</h2>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-6 text-center animate-box">
-                                    <div class="services">
-                                        <span class="icon">
-                                            <i class="flaticon-gym"></i>
-                                        </span>
-                                        <div class="desc">
-                                            <h3>Cardio Program</h3>
-                                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 text-center animate-box">
-                                    <div class="services">
-                                        <span class="icon">
-                                            <i class="flaticon-weightlifting"></i>
-                                        </span>
-                                        <div class="desc">
-                                            <h3>Body Building</h3>
-                                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 text-center animate-box">
-                                    <div class="services">
-                                        <span class="icon">
-                                            <i class="flaticon-martial-arts"></i>
-                                        </span>
-                                        <div class="desc">
-                                            <h3>Karate Classes</h3>
-                                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-                                            </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 text-center animate-box">
-                                    <div class="services">
-                                        <span class="icon">
-                                            <i class="flaticon-gloves"></i>
-                                        </span>
-                                        <div class="desc">
-                                            <h3>Boxing Program</h3>
-                                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-12 animate-box">
-                                    <div class="services-img" style="background-image: url(public/images/classes-1.jpg);"></div>
-                                </div>
-                                <div class="col-md-6 animate-box">
-                                    <div class="services-img" style="background-image: url(public/images/classes-2.jpg);"></div>
-                                </div>
-                                <div class="col-md-6 animate-box">
-                                    <div class="services-img" style="background-image: url(public/images/classes-3.jpg);"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+         
             <div id="colorlib-schedule" class="colorlib-light-grey">
                 <div class="container">
                     <div class="row">
@@ -318,8 +241,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-                            <h2>Our Trainers</h2>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+                            <h2>Наши Тренера</h2>
+                            <p>Неважно, как медленно ты продвигаешься. Главное — ты не останавливаешься.</p>
                         </div>
                     </div>
                     <div class="row animate-box">
@@ -350,7 +273,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-                            <h2>What people says behind their success</h2>
+                            <h2>Что люди думают об удаче</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -421,8 +344,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-                            <h2>Our Classes</h2>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+                            <h2>Наши треннировки</h2>
+                            <p>Победа не дает силу. Силу дает борьба. Если ты борешься и не сдаешься — это и есть сила.</p>
                         </div>
                     </div>
                     @foreach($fprogramm as $fprogram)
@@ -452,7 +375,7 @@
                         <div class="col-md-4 col-md-push-8 animate-box">
                             <div class="request">
                                 <h2>Request</h2>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+                                <p>Те, кто не могут найти время для тренировок, придется искать время для того, чтобы болеть!</p>
                             </div>
                         </div>
 
@@ -524,55 +447,35 @@
                     </div>
                 </div>
             </div>
+ 
+ 
     
             <div class="colorlib-event">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-                            <h2>Upcoming Events</h2>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+                            <h2>Новости</h2>
+                            <p>Бог дал вам тело, которое может вынести почти все! Ваша задача - убедить в этом свой разум!</p>
                         </div>
                     </div>
                     <div class="row row-pb-sm">
                         <div class="col-md-4 animate-box">
                             <div class="event-entry">
                                 <div class="desc">
-                                    <p class="meta"><span class="day">19</span><span class="month">Apr</span></p>
-                                    <p class="organizer"><span>Organized by:</span> <span>Noah Henderson</span></p>
-                                    <h2><a href="event.html">Special Training for boxing</a></h2>
+                                @foreach($events as $event)
+                                    <p class="meta"><span class="day">"{{$event->date}}"</span></p>
+                                    <p class="organizer"><span>Organized by:</span> <span>"{{$event->organizer}}"</span></p>
+                                    <h2><a href="event.html">"{{$event->name}}"</a></h2>
                                 </div>
                                 <div class="location">
                                     <span class="icon"><i class="icon-map"></i></span>
-                                    <p>291 South 21th Street, Suite 721 New York NY 10016</p>
+                                    <p>"{{$event->address}}"</p>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 animate-box">
-                            <div class="event-entry">
-                                <div class="desc">
-                                    <p class="meta"><span class="day">19</span><span class="month">Apr</span></p>
-                                    <p class="organizer"><span>Organized by:</span> <span>Noah Henderson</span></p>
-                                    <h2><a href="event.html">Gather for World Yoga Day</a></h2>
-                                </div>
-                                <div class="location">
-                                    <span class="icon"><i class="icon-map"></i></span>
-                                    <p>291 South 21th Street, Suite 721 New York NY 10016</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 animate-box">
-                            <div class="event-entry">
-                                <div class="desc">
-                                    <p class="meta"><span class="day">19</span><span class="month">Apr</span></p>
-                                    <p class="organizer"><span>Organized by:</span> <span>Noah Henderson</span></p>
-                                    <h2><a href="event.html">Motivational exercise</a></h2>
-                                </div>
-                                <div class="location">
-                                    <span class="icon"><i class="icon-map"></i></span>
-                                    <p>291 South 21th Street, Suite 721 New York NY 10016</p>
-                                </div>
-                            </div>
-                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
