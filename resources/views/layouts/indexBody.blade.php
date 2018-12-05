@@ -411,7 +411,7 @@
                                         <div class="form-group">
                                             <label for="name">ФИО</label>
                                             <div class="form-field">
-                                                <input type="text" class="form-control" placeholder="имя" name = "fname">
+                                                <input type="text" class="form-control" placeholder="имя" name = "fname" required >
                                             </div>
                                         </div>
                                     </div>
@@ -419,7 +419,7 @@
                                         <div class="form-group">
                                             <label for="phone">Телефон</label>
                                             <div class="form-field">
-                                                <input type="text" class="form-control" placeholder="номер" name = "phone">
+                                                <input type="text" class="form-control" placeholder="номер" name = "phone" required pattern=".{5,20}">
                                             </div>
                                         </div>
                                     </div>
@@ -428,7 +428,7 @@
                                             <label for="date">Дата:</label>
                                             <div class="form-field">
                                                 <i class="icon icon-calendar2"></i>
-                                                <input type="text" id="date" class="form-control date" placeholder="дата" name = "datetoday">
+                                                <input type="text" id="date" class="form-control date" placeholder="дата" name = "datetoday" required >
                                             </div>
                                         </div>
                                     </div>
