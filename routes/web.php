@@ -16,3 +16,8 @@ Route::post('/', 'ClientController@store')->name('addclient');
 Route::get('/blog','BlogController@index')->name('blog');
 Route::get('post/create', 'PostController@create');
 Route::post('post', 'PostController@store');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
